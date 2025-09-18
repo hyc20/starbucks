@@ -38,35 +38,38 @@
 
   <!-- HEADER -->
   <header>
-    <div class="inner">
-      
-      <a href="/" class="logo">
-        <img src="./images/starbucks_logo.png" alt="STARBUCKS">
+   <div class="inner">
+    
+    <div class="logo">
+      <a href="/"><!--루트 경로 설정-->
+        <img src="/images/starbucks_logo.png" alt="STARBUCKS">
       </a>
-
-      <div class="sub-menu">
-        <ul class="menu">
-          <li>
-            <a href="/signin">Sign In</a>
-          </li>
-          <li>
-            <a href="javascript:void()">My Starbucks</a>
-            <!-- /#보다 javascript:void()추천 -->
-          </li>
-          <li>
-            <a href="javascript:void()">Customer Service & Ideas</a>
-          </li>
-          <li>
-            <a href="javascript:void()">Find a Store</a>
-          </li>
-        </ul>
-        <div class="search">
-          <input type="text">
-          <div class="material-icons">search</div>
-        </div>
-      </div>
-
     </div>
+    
+    <div class="sub-menu">
+      <ul class="menu">
+        <li>
+          <a href="/signin">Sign In</a><!--로그인 페이지 이동-->
+        </li>
+        <li>
+          <a href="javascript:void(0)">My Starbucks</a>
+          <!--javascript:void(0) 임시 페이지 설정 아무 이벤트 발생하지 않음-->
+        </li>
+        <li>
+          <a href="javascript:void(0)">Customer Service & Ideas</a>
+        </li>
+         <li>
+          <a href="javascript:void(0)">Find a Store</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input type="text"/>
+        <div class="material-icons">search</div>
+      </div>
+    </div>
+
+
+   </div>
   </header>
 </body>
 </html>

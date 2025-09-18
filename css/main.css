@@ -1,6 +1,6 @@
 /* COMMON */
 body{
-  color : #333;
+  color : #333;/*기본 글자 색상*/
   font-size: 16px;/*시작 글자 크기*/
   font-weight: 400;/*글자 두께*/
   line-height: 1.4;/*글자 행간 길이*/
@@ -27,61 +27,13 @@ header .inner{
   position:relative;/*요소 자신을 기준(원래 자기 위치를 기준으로 얼마만큼 이동하는지 표현) */
 }
 header .logo{
-  height: 75px;
+  height: 75px;/*로고 이미지 크기와 같게 설정. 브라우저에게 높이값을 알려줘서 자동으로 가운데 정렬되게 설정*/
+  width: 75px;/*브라우저에게 너비값을 알려줘서 자동으로 가운데 정렬되게 설정*/
   position: absolute;/*위치 상 부모 요소 기준 (위치상 부모 확인) 위치상 부모는 inner*/
   top: 0;
   bottom: 0;
   left: 0;/*inner 기준으로 왼쪽에 위치하도록 설정*/
   margin: auto;/*외부 여백을 브라우저가 자동으로 계산*/
-  display: none;
-}
-
-header .sub-menu{
-
-}
-
-header .sub-menu ul.menu{
-  display: flex;
-}
-
-header .sub-menu ul.menu li {
-  font-family: Arial, sans-serif;
-  position: relative;
-}
-header .sub-menu ul.menu li::before {
-  content: "";
   display: block;
-  width: 1px;
-  height: 12px;
-  background-color: #e5e5e5;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-}
-header .sub-menu ul.menu li:first-child:before {
-  display: none;
-}
-header .sub-menu ul.menu li a{
-  /* background-color: red; */
-  font-size: 12px;
-  padding: 11px 16px;
-  display: block;
-  color: #656565;
 }
 
-header .sub-menu ul.menu li a:hover{
-  color: #000000;
-
-}
-
-header .sub-menu .search{
-
-}
-header .sub-menu .search input{
-
-}
-
-header .sub-menu .search .material-icons{
-
-}
