@@ -5,6 +5,7 @@ body{
   font-weight: 400;/*글자 두께*/
   line-height: 1.4;/*글자 행간 길이*/
   font-family: "Nanum Gothic", sans-serif;/*나눔 고딕 폰트 적용하기*/
+  height: 3000px;/*헤더 고정 확인을 위한 높이 설정*/
 }
 img{
   display: block;/* 인라인 요소인 img를 블록요소로 사용, 인라인 요소는 기본적으로 baseline이 있음 */
@@ -26,6 +27,9 @@ header{
   /* background-color: royalblue; */
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  /*position: relative;*/ /*배지 영역을 위한 포지션 설정*/
+  position: fixed;
+  top: 0;
 }
 header > .inner{ /*header 요소의 자식 요소 중 inner 클래스를 갖는 요소의 높이 설정*/
   /* width: 1100px; */
@@ -194,7 +198,19 @@ header .main-menu .item .item__contents .contents__texture h4{
 }
 header .main-menu .item .item__contents .contents__texture p{
   color: #669900;
-  margin: 4px 0 14px;
-  
+  margin: 4px 0 14px; 
 }
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+header .badges .badge{
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+  cursor: pointer;
+}
+
 
