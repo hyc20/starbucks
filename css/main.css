@@ -28,7 +28,11 @@ header{
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
   /*position: relative;*/ /*배지 영역을 위한 포지션 설정*/
-  position: fixed;
+  
+  /*포지션을 fixed 또는 absolute로 설정하면 가로 너비를 최소한으로 사용하게 되기 때문에
+  이를 방지하기 위해 가로 너비 뷰포트의 100%을 사용하게 설정*/
+  width: 100%;
+  position: fixed;/*뷰포트 기준으로 포지션 설정*/
   top: 0;
 }
 header > .inner{ /*header 요소의 자식 요소 중 inner 클래스를 갖는 요소의 높이 설정*/
