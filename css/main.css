@@ -358,6 +358,8 @@ header .badges .badge{
   background-color: #333;
   display: flex;
   align-items: center;
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+
 }
 .notice .notice-line .inner__left h2{
   color: #fff;
@@ -368,9 +370,19 @@ header .badges .badge{
 }
 .notice .notice-line .inner__left .swiper-container{
   height: 62px;
-  background-color: orange;
+  /* background-color: orange; */
   flex-grow: 1;/**/
 }
+.notice .notice-line .inner__left .swiper-container .swiper-slide{
+  height: 62px;
+  display: flex;
+  align-items: center;
+
+}
+.notice .notice-line .inner__left .swiper-container .swiper-slide a{
+  color: #fff;
+}
+
 .notice .notice-line .inner__left .notice-line__more{
   width: 62px;
   height: 62px;
@@ -389,7 +401,7 @@ header .badges .badge{
   /* background-color: #fff; */
   display: flex; 
   justify-content: flex-end;
-  align-items: center;
+  align-items: center   ;
 }
 .notice .notice-line .inner__right h2{
   font-size: 17px;
