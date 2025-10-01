@@ -423,7 +423,14 @@ header .badges .badge{
   height: 693px;
   background-color: #f6f5ef;
   position: relative;
+  transition: height .4s;
+  overflow: hidden;
 }
+
+.notice .promotion.hide{/*일치 선택자를 통해 hide가 붙어 있는 경우를 만들기 위해 띄어쓰면 안된다*/
+  height: 0;
+}
+
 .notice .promotion .swiper-container{
   width: calc(819px * 3 + 20px); /*필요한 너비 자동 계산(슬라이드 이미지 3개, 사진 사이 10px)*/
   height: 553 px;
@@ -500,3 +507,8 @@ header .badges .badge{
   background-color: #333;
   color: #fff;
 }
+
+
+
+
+

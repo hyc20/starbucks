@@ -79,3 +79,24 @@ new Swiper('.promotion .swiper-container',{
     nextEl:'.promotion .swiper-next'
   }
 });
+
+//토글 영역 시작
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+let isHidePromotion = false;
+
+promotionToggleBtn.addEventListener('click', function(){
+  isHidePromotion = !isHidePromotion; //클릭 될 때마다 플래그 변경
+  if(isHidePromotion){
+    //숨기기
+    promotionEl.classList.add('hide');  
+  }else{
+    //보이기
+    promotionEl.classList.remove('hide');
+  }
+});
+
+
+
+
+
