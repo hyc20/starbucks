@@ -5,7 +5,7 @@ body{
   font-weight: 400;/*글자 두께*/
   line-height: 1.4;/*글자 행간 길이*/
   font-family: "Nanum Gothic", sans-serif;/*나눔 고딕 폰트 적용하기*/
-  height: 3000px;/*헤더 고정 확인을 위한 높이 설정*/
+  height: 6000px;/*헤더 고정 확인을 위한 높이 설정*/
 }
 img{
   display: block;/* 인라인 요소인 img를 블록요소로 사용, 인라인 요소는 기본적으로 baseline이 있음 */
@@ -590,6 +590,49 @@ header .badges .badge{
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.youtube .inner{
+  height: 700px;
+  /* background-color: blue; */
+}
+.youtube .floating1{
+  position: absolute;/*inner 클래스에 relative 설정해 둠*/
+  top: 50px;
+  left: 0;
+}
+.youtube .floating2{
+  position: absolute;/*inner 클래스에 relative 설정해 둠*/
+  top: 350px;
+  left: 150px;
+}
+
+/* season product 영역 */
+.season-product {
+  background-image: url('../images/season_product_bg.jpg');
+}
+.season-product .inner{
+  height: 400px;
+}
+.season-product .floating3{
+  position: absolute;/*inner 클래스에 relative 설정해 둠*/
+  top: -200px;
+  right: 0;
+}
+
+.season-product .text-group{
+  position: absolute;/*.inner는 relative*/
+  top: 110px;
+  right: 100px;
+}
+.season-product .text-group .title{
+  margin-bottom: 10px;
+}
+.season-product .text-group .description{
+  margin-bottom: 15px;
+}
+.season-product .text-group .more{
+
 }
 
 

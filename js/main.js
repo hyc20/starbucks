@@ -96,7 +96,33 @@ promotionToggleBtn.addEventListener('click', function(){
   }
 });
 
+//소수점 두번째 자리까지 랜덤 값 만들기
+//toFixed(2)를 통해 반복된 문자 데이터를 parseFloat로 소수점 가지는 숫자 데이터로 변환
+function random(min,max){
+  return parseFloat((Math.random() * (max-min) + min).toFixed(2));
+}
 
+//유튜브 영역 플로팅 기능 추가
+function floatingObject(selector, delay, size){
+  // gsap.to(요소 ,시간 ,옵션 );
+  gsap.to(
+    selector,//선택자
+    random(1.5, 2.5),{ //애니메이션 동작시간
+    //옵션영역  
+    // y: 20, //y 축
+    y:size,
+    repeat: -1, //무한반복
+    yoyo: true, //기능 반복 
+    ease: Power1.easeInOut,
+    // delay: 1//1초 후 움직이 시작
+    delay: random(0, delay)
+  });
+}
+// floatingObject('.floating');
+
+floatingObject('.floating1',1,15);
+floatingObject('.floating2',0.5,15);
+floatingObject('.floating3',1.5,20);
 
 
 
