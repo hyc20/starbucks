@@ -124,5 +124,17 @@ floatingObject('.floating1',1,15);
 floatingObject('.floating2',0.5,15);
 floatingObject('.floating3',1.5,20);
 
+//ScrollMagic 기능 추가
+const spyEls = document.querySelectorAll('section.scroll-spy')
+spyEls.forEach(function(spyEl){
+  //메소드 체이닝
+  new ScrollMagic
+      .Scene({
+        triggerElement : spyEl, //보이는 여부를 감시할 요소 지정
+        triggerHook : .8, //뷰포트의 처음은 0 끝은 1, 그 사이의 0.8 부분에서 감시를 시작하는 옵션
+      })
+      .setClassToggle(spyEl, 'show') //뷰포트의 0.8 지점에 도달하면 show 클래스 추가
+      .addTo(new ScrollMagic.Controller())
+})
 
 
