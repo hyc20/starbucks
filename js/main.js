@@ -151,4 +151,6 @@ spyEls.forEach(function(spyEl){
       .addTo(new ScrollMagic.Controller())
 });
 
-
+// 연도 자동 계산
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
