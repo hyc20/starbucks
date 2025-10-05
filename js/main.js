@@ -96,6 +96,20 @@ promotionToggleBtn.addEventListener('click', function(){
   }
 });
 
+//어워즈 영역 Swiper 기능 추가
+new Swiper('.awards .swiper-container', {
+  direction : 'horizontal', //수평이 기본 값
+  autoplay: true,
+  loop : true,
+  spaceBetween : 30, 
+  slidesPerView : 5,
+  navigation: {
+    prevEl : '.awards .swiper-prev',
+    nextEl : '.awards .swiper-next'
+  }
+})
+
+
 //소수점 두번째 자리까지 랜덤 값 만들기
 //toFixed(2)를 통해 반복된 문자 데이터를 parseFloat로 소수점 가지는 숫자 데이터로 변환
 function random(min,max){
@@ -135,6 +149,6 @@ spyEls.forEach(function(spyEl){
       })
       .setClassToggle(spyEl, 'show') //뷰포트의 0.8 지점에 도달하면 show 클래스 추가
       .addTo(new ScrollMagic.Controller())
-})
+});
 
 
